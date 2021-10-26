@@ -1,0 +1,38 @@
+Variable / Field Name	Form Name	Section Header	Field Type	Field Label	Choices, Calculations, OR Slider Labels	standard_Variable / Field Name	standard_Form Name	standard_Field Type	standard_Field Label	standard_Choices, Calculations, OR Slider Labels	site_codes_similar_to_standard	coding_map_for_script	Notes	field_types_similar
+record_id	sparco_base_data		text	Research Subject ID <a href="http://scdontology.h3abionet.org/ontology/SCDO_0000304">Research ID</a>		record_id	sparco_base_data	text	Research Subject ID <a href="http://scdontology.h3abionet.org/ontology/SCDO_0000304">Research ID</a>	0	1			1
+date_today	sparco_base_data	Consent	text	Has the patient consented?	1, Yes | 0, No | -996, Refused | -997, Truly unknown	date_today	sparco_base_data	text	Visit Date (dd/mm/yyyy)	0	0			1
+registry_number	sparco_base_data		checkbox	Type of informed consent	1, Study enrollment | 2, Specimen Storage Consent | 3, Genetic Material Storage Consent | 4, Broad consent	#N/A	#N/A	#N/A	#N/A	#N/A	#N/A			#N/A
+scd_number	sparco_base_data		text	Date subject signed consent		scd_number	sparco_base_data	text	SCD Number	0	1			1
+medical_record_number	sparco_base_data		text	Consented by:		#N/A	#N/A	#N/A	#N/A	#N/A	#N/A			#N/A
+hospital_name	sparco_base_data		file	Upload the consent form		#N/A	#N/A	#N/A	#N/A	#N/A	#N/A			#N/A
+first_name	sparco_base_data	Basic Demographics	text	Visit Date (dd/mm/yyyy)		first_name	sparco_base_data	text	First Name	0	1			1
+middle_name	sparco_base_data		text	Participant  Number		middle_name	sparco_base_data	text	Middle Name	0	1			1
+last_name	sparco_base_data		text	SCD Number		last_name	sparco_base_data	text	Last Name	0	1			1
+date_of_birth	sparco_base_data		text	First Name		date_of_birth	sparco_base_data	text	Date of Birth (dd/mm/yyyy)	0	1			1
+age_at_enrollment	sparco_base_data		text	Middle Name		#N/A	#N/A	#N/A	#N/A	#N/A	#N/A			#N/A
+age_at_today	sparco_base_data		text	Last Name		#N/A	#N/A	#N/A	#N/A	#N/A	#N/A			#N/A
+marital_status	sparco_base_data		text	Date of Birth (dd/mm/yyyy)		#N/A	#N/A	#N/A	#N/A	#N/A	#N/A			#N/A
+sex	sparco_base_data		radio	Sex	1, Male | 0, Female | -996, Refused | -997, Truly unknown	gender	sparco_base_data	radio	Gender	1, Male | 0, Female | -996, Refused | -997, Truly unknown	1	2:1, 1:0, -996:-996,-997:-997		1
+tribe	sparco_base_data		calc	Calculated age (in months)	datediff([date_today],[date_of_birth], "M","dmy")	tribe	sparco_base_data	text	Tribe	0	0			0
+year_of_diagnosis	sparco_base_data		text	Self-reported age (in years)		year_of_diagnosis	sparco_base_data	dropdown	Year of Diagnosis	-997, Truly unknown | 1900, 1900 | 1901, 1901 | 1902, 1902 | 1903, 1903 | 1904, 1904 | 1905, 1905 | 1906, 1906 | 1907, 1907 | 1908, 1908 | 1909, 1909 | 1910, 1910 | 1911, 1911 | 1912, 1912 | 1913, 1913 | 1914, 1914 | 1915, 1915 | 1916, 1916 | 1917, 1917 |	0			0
+scd_test_result_ss_sbthal	sparco_base_data		text	Tribe		#N/A	#N/A	#N/A	#N/A	#N/A	#N/A			#N/A
+abo_blood_group	sparco_base_data	CONTACTS	text	Residence		abo_blood_group	sparco_base_data	dropdown	ABO Blood Group	1, A+ | 2, A- | 3, B+ | 4, B- | 5, O+ | 6, O- | 7, AB+ | 8, AB-	0			0
+using_hydroxyurea	sparco_base_data		text	Street		using_hydroxyurea	sparco_base_data	yesno	Using Hydroxyurea	0	1			0
+date_of_initiation_of_hydr	sparco_base_data		text	Ward		date_of_initiation_of_hydr	sparco_base_data	text	Date of Initiation of Hydroxyurea Therapy	0	1			1
+penicillin_v_prophylaxis	sparco_base_data		text	District		penicillin_v_prophylaxis	sparco_base_data	radio	Penicillin V (prophylaxis)	1, Yes | 0, No | -993, Not required / Not necessary	0			0
+folic_acid	sparco_base_data		text	Region		folic_acid	sparco_base_data	yesno	Folic Acid	0	1			0
+antimalaria_prophylaxis	sparco_base_data		text	Telephone1		antimalaria_prophylaxis	sparco_base_data	radio	Anti Malaria Prophylaxis	1, Yes | 0, No | -993, Not required / Not necessary	0			0
+pneumococcal_vacc_uptodate	sparco_base_data		text	Telephone2		pneumococcal_vacc_uptodate	sparco_base_data	yesno	Pneumococcal Vaccination up to date	0	1			0
+residence	sparco_base_data		text	Next of kin Name		residence	sparco_base_data	text	Residence	0	1			1
+street	sparco_base_data		text	Relationship to the Patient	1, Married to a person of the opposite sex | 2, Married to a person of the same sex | 3, Not married but living together with a partner of the opposite sex | 5, Not married but living together with a partner of the same sex | 6, Widowed | 7, Divorced or annulled | 8, Separated | 9, Never been married | 99, Other	street	sparco_base_data	text	Street	0	0			1
+ward	sparco_base_data		text	Next of Kin Telephone Number		ward	sparco_base_data	text	Ward	0	1			1
+district	sparco_base_data	Diagnosis Details	yesno	Is date of diagnosis known?		district	sparco_base_data	text	District	0	1			0
+region	sparco_base_data		text	Date of diagnosis		region	sparco_base_data	text	Region	0	1			1
+telephone1	sparco_base_data		dropdown	Year of Diagnosis	-997, Truly unknown | 1900, 1900 | 1901, 1901 | 1902, 1902 | 1903, 1903 | 1904, 1904 | 1905, 1905 | 1906, 1906 | 1907, 1907 | 1908, 1908 | 1909, 1909 | 1910, 1910 | 1911, 1911 | 1912, 1912 | 1913, 1913 | 1914, 1914 | 1915, 1915 | 1916, 1916 | 1917, 1917 |	telephone1	sparco_base_data	text	Telephone1	0	0			0
+telephone2	sparco_base_data		dropdown	Month of Diagnosis	-997, Truly unknown | 1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12	telephone2	sparco_base_data	text	Telephone2	0	0			0
+next_of_kin_name	sparco_base_data		text	Age in years at diagnosis		next_of_kin_name	sparco_base_data	text	Next of kin Name	0	1			1
+next_of_kin_relationship	sparco_base_data		text	Age in months at diagnosis		next_of_kin_relationship	sparco_base_data	text	Relationship to the Patient	1, Married to a person of the opposite sex | 2, Married to a person of the same sex | 3, Not married but living together with a partner of the opposite sex | 5, Not married but living together with a partner of the same sex | 6, Widowed | 7, Divorced or annulled | 8, Separated | 9, Never been married | 99, Other	0			1
+next_of_kin_telephone_numb	sparco_base_data		dropdown	SCD Test Result	1, SS | 2, SBThal | 3, SC | 4, AS	next_of_kin_telephone_numb	sparco_base_data	text	Next of Kin Telephone Number	0	0			0
+added_by	sparco_base_data		dropdown	Type of test?	1, HPLC | 2, HBE | 3, IEF | 4, Basique | 5, Acide | 99, Other	added_by	sparco_base_data	text	Added by	0	0			0
+add_date	sparco_base_data		text	If other test, please specify:		add_date	sparco_base_data	text	Add Date	0	1			1
+
