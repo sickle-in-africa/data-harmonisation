@@ -38,14 +38,6 @@ The **Sickle in Africa Consortium** brings together multiple research and clinic
 #### Template file to help sites build their own mappings
 
 
-├── README.md                                   
-#### Markdown-formatted project overview and documentation
-
-
-├── README.txt                                  
-### Older plain-text version of the README
-
-
 
 
 
