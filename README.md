@@ -20,11 +20,17 @@ The **Sickle in Africa Consortium** brings together multiple research and clinic
 
 .
 ├── DataMigrationCodeFinal14April.py           # Main script for harmonizing local datasets to SADaCC format
+
 ├── DataMigrationScriptFinal.py                # Alternate or experimental harmonization script
+
 ├── MappingFile1.tsv                            # Example mapping of local variable names to SADaCC standard
+
 ├── SADaCCVariables.tsv                         # Full dictionary of standardized SADaCC variable names
+
 ├── Sadacc_sparco_TEMPLATE_mapping_ver7b-....  # Template file to help sites build their own mappings
+
 ├── README.md                                   # Markdown-formatted project overview and documentation
+
 ├── README.txt                                  # Older plain-text version of the README
 
 
