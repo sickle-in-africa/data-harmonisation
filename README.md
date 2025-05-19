@@ -19,7 +19,7 @@ The **Sickle in Africa Consortium** brings together multiple research and clinic
 ## 📁 Repository Structure
 
 ├── DataMigrationCodeFinal14April.py           
- (# Main script for harmonizing local datasets to SADaCC format)
+ ###### Main script for harmonizing local datasets to SADaCC format
 
 ├── DataMigrationScriptFinal.py                
 # Alternate or experimental harmonization script
